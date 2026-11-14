@@ -209,8 +209,6 @@ int main()
         {
             press_count = 0;
         }
-
-        DELAY_CYCLES(50000000);
     }
 
     return 0;
