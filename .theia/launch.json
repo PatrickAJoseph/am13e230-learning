@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "gpio_output_toggle_am13e230x_lp_m33_nortos_ti_arm_clang",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "gpio_output_toggle_am13e230x_lp_m33_nortos_ti_arm_clang",
+                "resourceId": "/gpio_output_toggle_am13e230x_lp_m33_nortos_ti_arm_clang"
+            }
+        }
+    ]
+}
