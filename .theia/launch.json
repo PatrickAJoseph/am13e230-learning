@@ -45,6 +45,15 @@
                 "name": "systick_interrupt",
                 "resourceId": "/systick_interrupt"
             }
+        },
+        {
+            "name": "uart_poll",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "uart_poll",
+                "resourceId": "/uart_poll"
+            }
         }
     ]
 }
