@@ -119,20 +119,20 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXE_OUTPUTS += \
-uart_poll.out 
+uart_rx_interrupt.out 
 
 EXE_OUTPUTS__QUOTED += \
-"uart_poll.out" 
+"uart_rx_interrupt.out" 
 
 
 # All Target
 all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
-	@$(MAKE) --no-print-directory -Onone "uart_poll.out"
+	@$(MAKE) --no-print-directory -Onone "uart_rx_interrupt.out"
 
 # Tool invocations
-uart_poll.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
+uart_rx_interrupt.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Arm Linker - building target: "$@"'
-	"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-armllvm_5.1.1.LTS/bin/tiarmclang.exe" -mcpu=cortex-m33 -mfloat-abi=hard -mfpu=fpv5-sp-d16 -mlittle-endian -mthumb -Og -D_DEBUG -g -Wextra -Wall -Werror -Wno-gnu-variable-sized-type-not-at-end -Wno-unused-function -Wno-unused-command-line-argument -Wno-unused-parameter -march=armv8.1-m.main+cdecp0 -Wl,-m"uart_poll.map" -Wl,--heap_size=0 -Wl,--stack_size=256 -Wl,-i"C:/ti/am13e230x_sdk_26_01_00_03/build/am13e230x/lib/Debug" -Wl,-i"C:/ti/am13e230x_sdk_26_01_00_03" -Wl,-i"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-armllvm_5.1.1.LTS/lib" -Wl,--reread_libs -Wl,--diag_suppress=10063 -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="uart_poll_linkInfo.xml" -Wl,--rom_model -o "uart_poll.out" $(ORDERED_OBJS)
+	"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-armllvm_5.1.1.LTS/bin/tiarmclang.exe" -mcpu=cortex-m33 -mfloat-abi=hard -mfpu=fpv5-sp-d16 -mlittle-endian -mthumb -Og -D_DEBUG -g -Wextra -Wall -Werror -Wno-gnu-variable-sized-type-not-at-end -Wno-unused-function -Wno-unused-command-line-argument -Wno-unused-parameter -march=armv8.1-m.main+cdecp0 -Wl,-m"uart_rx_interrupt.map" -Wl,--heap_size=0 -Wl,--stack_size=256 -Wl,-i"C:/ti/am13e230x_sdk_26_01_00_03/build/am13e230x/lib/Debug" -Wl,-i"C:/ti/am13e230x_sdk_26_01_00_03" -Wl,-i"C:/ti/ccs2100/ccs/tools/compiler/ti-cgt-armllvm_5.1.1.LTS/lib" -Wl,--reread_libs -Wl,--diag_suppress=10063 -Wl,--diag_wrap=off -Wl,--display_error_number -Wl,--warn_sections -Wl,--xml_link_info="uart_rx_interrupt_linkInfo.xml" -Wl,--rom_model -o "uart_rx_interrupt.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 

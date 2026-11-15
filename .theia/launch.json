@@ -47,12 +47,21 @@
             }
         },
         {
-            "name": "uart_poll",
+            "name": "uart_tx_poll",
             "type": "ccs-debug",
             "request": "launch",
             "projectInfo": {
-                "name": "uart_poll",
-                "resourceId": "/uart_poll"
+                "name": "uart_tx_poll",
+                "resourceId": "/uart_tx_poll"
+            }
+        },
+        {
+            "name": "uart_tx_rx_interrupt",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "uart_tx_rx_interrupt",
+                "resourceId": "/uart_tx_rx_interrupt"
             }
         }
     ]
