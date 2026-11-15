@@ -1,0 +1,20 @@
+digraph {
+    graph [fontname = "helvetica"];
+    node  [fontname = "helvetica" margin="0.2"];
+    edge  [fontname = "helvetica" fontsize=10 labeldistance="1.5"];
+    graph [mclimit=50 rankdir=LR];
+
+        node [shape=cds style=filled fillcolor="#A0FFA0"];
+
+        node [shape=rectangle style=filled fillcolor="#FFA0A0"];
+
+        node [shape=oval style=filled fillcolor="#FFA0A0"];
+
+        node [shape=triangle style=filled orientation=-90 fillcolor="#A0A0FF"];
+
+        node [shape=rectangle style=filled orientation=-90 fillcolor="#FFFFA0"];
+
+        node [shape=rectangle style=filled fillcolor="#A0A0FF"];
+
+
+}
