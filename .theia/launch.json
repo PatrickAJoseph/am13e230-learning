@@ -72,6 +72,15 @@
                 "name": "uart_tx_rx_dma",
                 "resourceId": "/uart_tx_rx_dma"
             }
+        },
+        {
+            "name": "timer_basic",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "timer_basic",
+                "resourceId": "/timer_basic"
+            }
         }
     ]
 }
