@@ -81,6 +81,15 @@
                 "name": "timer_basic",
                 "resourceId": "/timer_basic"
             }
+        },
+        {
+            "name": "timer_pwm_basic",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "timer_pwm_basic",
+                "resourceId": "/timer_pwm_basic"
+            }
         }
     ]
 }
