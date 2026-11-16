@@ -108,6 +108,15 @@
                 "name": "timer_capture_period",
                 "resourceId": "/timer_capture_period"
             }
+        },
+        {
+            "name": "timer_capture_pwm",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "timer_capture_pwm",
+                "resourceId": "/timer_capture_pwm"
+            }
         }
     ]
 }
