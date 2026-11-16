@@ -6,8 +6,8 @@
  *  This example generates a PWM signal on PA3 with
  *  varying duty cycle. Connect PA3 to PA28 which is
  *  the capture input pin. Monitor the following variables
- *  in the watch window: `measured_frequency_hz`,
- *  `measured_period_ns1 and `frequency`.
+ *  in the watch window: `measured_frequency`,
+ *  `measured_duty`.
  */
 
 #define REG_WRITE(reg, mask, pos, value)                 \
