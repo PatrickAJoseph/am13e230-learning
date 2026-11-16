@@ -90,6 +90,15 @@
                 "name": "timer_pwm_basic",
                 "resourceId": "/timer_pwm_basic"
             }
+        },
+        {
+            "name": "timer_center_aligned_pwm",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "timer_center_aligned_pwm",
+                "resourceId": "/timer_center_aligned_pwm"
+            }
         }
     ]
 }
