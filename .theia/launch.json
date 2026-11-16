@@ -99,6 +99,15 @@
                 "name": "timer_center_aligned_pwm",
                 "resourceId": "/timer_center_aligned_pwm"
             }
+        },
+        {
+            "name": "timer_capture_period",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "timer_capture_period",
+                "resourceId": "/timer_capture_period"
+            }
         }
     ]
 }
