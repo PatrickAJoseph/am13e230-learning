@@ -126,6 +126,15 @@
                 "name": "timer_capture_counter",
                 "resourceId": "/timer_capture_counter"
             }
+        },
+        {
+            "name": "cmpss_dac",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "cmpss_dac",
+                "resourceId": "/cmpss_dac"
+            }
         }
     ]
 }

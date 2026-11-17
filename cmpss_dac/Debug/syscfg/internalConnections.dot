@@ -1,0 +1,44 @@
+digraph {
+    graph [fontname = "helvetica"];
+    node  [fontname = "helvetica" margin="0.2"];
+    edge  [fontname = "helvetica" fontsize=10 labeldistance="1.5"];
+    graph [mclimit=50 rankdir=LR];
+
+        node [shape=cds style=filled fillcolor="#A0FFA0"];
+            PA4
+
+        node [shape=rectangle style=filled fillcolor="#FFA0A0"];
+
+        node [shape=oval style=filled fillcolor="#FFA0A0"];
+
+        node [shape=triangle style=filled orientation=-90 fillcolor="#A0A0FF"];
+            CMPSS2_COMPH [label="CMP" margin="0.1"]
+            CMPSS2_COMPL [label="CMP" margin="0.1"]
+
+        node [shape=rectangle style=filled orientation=-90 fillcolor="#FFFFA0"];
+
+        node [shape=rectangle style=filled fillcolor="#A0A0FF"];
+            CMPSS2_COMPH
+            CMPSS2_CTRIPH [label="CMPSS2_CTRIPH\n(ASYNC_COMP)"]
+            CMPSS2_CTRIPOUTH [label="CMPSS2_CTRIPOUTH\n(ASYNC_COMP)"]
+            CMPSS2_COMPL
+            CMPSS2_CTRIPL [label="CMPSS2_CTRIPL\n(ASYNC_COMP)"]
+            CMPSS2_CTRIPOUTL [label="CMPSS2_CTRIPOUTL\n(ASYNC_COMP)"]
+            CMPSS2_DACL
+
+        CMPSS2_COMPH -> CMPSS2_CTRIPH
+        CMPSS2_COMPH -> CMPSS2_CTRIPOUTH
+        CMPSS2_COMPL -> CMPSS2_CTRIPL
+        CMPSS2_COMPL -> CMPSS2_CTRIPOUTL
+        CMPSS2_DACL -> PA4
+
+        subgraph cluster_CMPSS2_ {
+            margin=10 style=invis
+            subgraph cluster_CMPSS2 {
+                label = "CMPSS2\n(APP_CMPSSLITE_0)"
+                style=filled
+                
+                CMPSS2_COMPH CMPSS2_CTRIPH CMPSS2_CTRIPOUTH CMPSS2_COMPL CMPSS2_CTRIPL CMPSS2_CTRIPOUTL CMPSS2_DACL
+            }
+        }
+}
