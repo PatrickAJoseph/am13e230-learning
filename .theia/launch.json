@@ -135,6 +135,15 @@
                 "name": "cmpss_dac",
                 "resourceId": "/cmpss_dac"
             }
+        },
+        {
+            "name": "ecap_capture",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "ecap_capture",
+                "resourceId": "/ecap_capture"
+            }
         }
     ]
 }
