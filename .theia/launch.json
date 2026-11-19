@@ -144,6 +144,15 @@
                 "name": "ecap_capture",
                 "resourceId": "/ecap_capture"
             }
+        },
+        {
+            "name": "adc_polling",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "adc_polling",
+                "resourceId": "/adc_polling"
+            }
         }
     ]
 }
